@@ -7,8 +7,8 @@ def getKeypoints(videoPath):
     mp_pose = mp.solutions.pose
 
     cap = cv2.VideoCapture(videoPath)
-    allXY = []
-
+    # allXY = []
+    frames = []
     total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     frame_indices = [i * (total_frames // 192) for i in range(192)]
 
@@ -23,15 +23,20 @@ def getKeypoints(videoPath):
             image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             results = pose.process(image)
 
+            keypoints = []
+
             for j in range(33):
-                allXY.append(results.pose_landmarks.landmark[j].x)
-                allXY.append(results.pose_landmarks.landmark[j].y)
+                keypoints.append([results.pose_landmarks.landmark[j].x, results.pose_landmarks.landmark[j].y])
+                # allXY.append(results.pose_landmarks.landmark[j].x)
+                # allXY.append(results.pose_landmarks.landmark[j].y)
+            frames.append(keypoints)
 
     cap.release()
-    return np.array(allXY)
+    # return allXY
+    return frames
 
 
-# path2Vid = 'Videos/test.MOV'
+# path2Vid = 'Videos/depth.MOV'
 # arr = getKeypoints(path2Vid)
 # print(arr.shape)
 
