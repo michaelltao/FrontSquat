@@ -7,7 +7,11 @@ Neural network implentation via TensorFlow for depth detection in a powerlifting
 - Google's MediaPipe pose estimation solution used to detect subject's keypoints throughout the video. 
 - Input video is parsed via `getKeypoints.py` using MediaPipe and output coordinates concatenated into a numpy array for input to the neural network. 
 >
-## Example
-Run `demo.py` for a demonstration of how the model works  
+## Installation and Example  
+Install requirements `pip install -r requirements.txt` 
+
+Compile the model by running `model.py`
+
+Run `demo.py` for a demonstration of how the model works with an input  
 - Function takes in a path to a video (provided), runs it through the trained network, and prints whether squat depth was achieved
 
