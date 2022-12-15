@@ -9,7 +9,7 @@ Neural network implentation via TensorFlow for depth detection in a powerlifting
 ### Parameters and Training
 - Train-test split of 0.8 and 0.2
 - Model trained with batch size of 32 and 200 epochs
-- 3 layers with 32, 64, and 1 neurons where the first two layer activation functions are ReLU and the last layer is a sigmoid
+- 3 layers with 32, 64, and 1 neuron(s) where the first two layer activation functions are ReLU and the last layer is a sigmoid
 >
 ## Installation and Example  
 Install requirements `pip install -r requirements.txt` 
