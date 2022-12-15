@@ -15,3 +15,6 @@ Compile the model by running `model.py`
 Run `demo.py` for a demonstration of how the model works with an input  
 - Function takes in a path to a video (provided), runs it through the trained network, and prints whether squat depth was achieved
 
+## References
+Google's MediaPipe [pose estimatation](https://google.github.io/mediapipe/solutions/pose.html)
+
