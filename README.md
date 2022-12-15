@@ -20,5 +20,5 @@ Run `demo.py` for a demonstration of how the model works with an input
 - Function takes in a path to a video (provided), runs it through the trained network, and prints whether squat depth was achieved
 
 ## References
-Google's MediaPipe [pose estimatation](https://google.github.io/mediapipe/solutions/pose.html) solution to obtain landmark coordinates and [Kaggle Powerlifting](https://www.kaggle.com/datasets/ayoobaboosalih/powerlifting-squat-dataset)
+Google's MediaPipe [pose estimation](https://google.github.io/mediapipe/solutions/pose.html) solution to obtain landmark coordinates and [Kaggle Powerlifting](https://www.kaggle.com/datasets/ayoobaboosalih/powerlifting-squat-dataset)
 
